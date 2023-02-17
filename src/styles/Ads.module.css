@@ -1,0 +1,22 @@
+.Box {
+	border: 1px solid black;
+	width: 970px;
+	background-color: #d8d8d8;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	font-weight: 600;
+	color: #5e5e5e;
+	margin-top: 1rem;
+}
+
+.TopFrame {
+	height: 50px;
+}
+
+.Billboard {
+	height: 250px;
+	margin-top: 2rem;
+}

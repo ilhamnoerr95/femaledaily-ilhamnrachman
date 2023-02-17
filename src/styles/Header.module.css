@@ -1,0 +1,82 @@
+/* @import url("globals.css"); */
+
+.MainNavContainer {
+	display: grid;
+	grid-template-rows: auto auto;
+}
+
+.NavContainerTop {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.NavLeftContainer {
+	display: grid;
+	grid-template-columns: 2vw auto 75vw;
+	gap: 20px;
+	align-items: center;
+}
+
+/* .NavOne {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+} */
+
+.NavAuth {
+	display: block;
+	background-color: #dc294f;
+	padding: 15px;
+	cursor: pointer;
+}
+.NavAuthChild {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 10px;
+	align-items: center;
+	color: white;
+}
+
+.NavInputContainer {
+	position: relative;
+	/* color: red; */
+}
+.TextField {
+	width: 100%;
+	height: 40px;
+	border: 1px solid #e4e4e4;
+}
+.TextField::placeholder {
+	position: relative;
+	left: 50px;
+	font-weight: 600;
+}
+
+.Icon {
+	position: absolute;
+	top: 50%;
+	left: 1rem;
+	transform: translateY(-50%);
+}
+
+.NavContainerBot {
+	border-top: 2px solid #e4e4e4;
+	border-bottom: 2px solid #e4e4e4;
+	padding: 12px;
+	gap: 25px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+.NavContainerBot li {
+	list-style-type: none;
+	cursor: pointer;
+}
+
+.poppin-md {
+	font-size: 14px;
+	font-weight: 600;
+}
