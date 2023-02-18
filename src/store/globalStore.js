@@ -1,4 +1,5 @@
-import { createSlice } from "@reduxjs/toolkit";
+import axios from 'axios'
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 // assets
 import {assets} from "/src/assets"
 
@@ -18,19 +19,48 @@ const initialState = {
       {id:2, img: assets.cat, },
       {id:3, img: assets.cat, },
       {id:4, img: assets.cat},
-    ]
+    ],
+    editorChoices: [],
+    articles: [],
+    review: [],
+    loading: false
 };
 
+
+export const fetchingData = createAsyncThunk(
+  'femaleDaily/getData',
+  async ( thunkAPI) => {
+    const response = await axios.get("https://virtserver.swaggerhub.com/hqms/FDN-WP/0.1/wp")
+    return response.data
+  }
+)
 export const globalStore = createSlice({
   name: "global store",
   initialState,
 
-  reducers: {},
+  reducers: {
+  
+  }, 
+  extraReducers: (builder) => {
+    builder.addCase(fetchingData.pending, (state, action) => {
+      state.loading= true
+    })
+    // Add reducers for additional action types here, and handle loading state as needed
+    builder.addCase(fetchingData.fulfilled, (state, action) => {
+      state.loading= false
+      // console.log(action.payload['latest articles'])
+      // Add user to the state array
+      state.articles = action.payload['latest articles']
+      state.editorChoices = action.payload["editor's choice"]
+      state.review = action.payload["latest review"]
+
+    })
+  },
 });
 
 export const brandsImg = (state) => state.global.brandsImg;
 export const groupBoxes = (state) => state.global.groupPopular;
-
+export const latestArticlesData = (state) => state.global.articles
 
 
 export default globalStore.reducer;

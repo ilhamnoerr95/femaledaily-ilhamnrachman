@@ -22,9 +22,9 @@ const BoxesPopuler = ()=>{
                         </div>
                        <h2 style={{marginBottom: "2rem"}}>Embrace the Curl</h2>
                        <div className={styles.PopularChoice}>
-                            <FontAwesomeIcon icon={faUserMinus} size="md"/>
-                            <FontAwesomeIcon icon={faBars} style={{marginLeft: "1rem"}} size="md"/>
-                            <FontAwesomeIcon icon={faMessage} style={{marginLeft: "1rem"}} size="md"/>
+                            <FontAwesomeIcon icon={faUserMinus} size="sm"/>
+                            <FontAwesomeIcon icon={faBars} style={{marginLeft: "1rem"}} size="sm"/>
+                            <FontAwesomeIcon icon={faMessage} style={{marginLeft: "1rem"}} size="sm"/>
                        </div>
                        <p>May our curls pop and never stop!</p>
                     </div>

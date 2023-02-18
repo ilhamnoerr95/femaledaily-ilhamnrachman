@@ -16,22 +16,22 @@ return (
                 </div>
             </div>
             <div className={style.VideoContainer}>
-                <iframe class={style.NewestVideo} height="500" src="https://www.youtube.com/embed/6LUdS0VFOJc" t
+                <iframe value="youtube" className={style.NewestVideo} height="500" src="https://www.youtube.com/embed/6LUdS0VFOJc" t
                 itle="Tips Menghilangkan Jerawat ft. Harumi Sudradjat | Female Daily" 
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen></iframe>
+                frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowFullScreen></iframe>
                 <div className={style.OldVideo}>
-                <iframe 
+                <iframe value="youtube" 
                     style={{width: "100%", height: "47%"}}
                     src="https://www.youtube.com/embed/Mv4vd__JIjY" 
-                    title="5 Skincare Retinol Lokal yang Jago Bikin Kulit Glowing dan Anti Kusam! | FD Insight" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
+                    title="5 Skincare Retinol Lokal yang Jago Bikin Kulit Glowing dan Anti Kusam! | FD Insight" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowFullScreen>
                 </iframe>
-                <iframe 
+                <iframe value="youtube" 
                 style={{width: "100%", height: "47%"}}
                 src="https://www.youtube.com/embed/UWlqWm62VVY" 
                 title="Masker yang Bisa Ngilangin Masalah Minyak di Muka! | FD Insight" 
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </div>
             </div>
         </section>

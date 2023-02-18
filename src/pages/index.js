@@ -1,16 +1,27 @@
 import Head from 'next/head'
-import { Inter } from '@next/font/google'
 import styles from '/src/styles/Home.module.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { useEffect } from 'react';
+
+// redux
+import { useDispatch } from "react-redux";
+import { fetchingData } from "/src/store/globalStore";
 
 // component
 import Ads from '/src/components/ads'
 import LatestVideo from 'components/home/latestVideo'
 import TopBrands from '/src/components/home/topbrands'
 import PopularGroup from 'components/home/popularGorups'
+import LatestArticles from 'components/home/latestArticles';
 
 export default function Home() {
+
+  const dispatch = useDispatch()
+
+  useEffect(()=>{
+    dispatch(fetchingData())
+    // dispatch(edit())
+  },[dispatch])
+
   return (
     <>
       <Head>
@@ -33,6 +44,7 @@ export default function Home() {
             (Internal campaign only)
           </Ads>
         {/* --------------- */}
+        <LatestArticles/>
         <PopularGroup/>
         <LatestVideo/>
         <TopBrands/>

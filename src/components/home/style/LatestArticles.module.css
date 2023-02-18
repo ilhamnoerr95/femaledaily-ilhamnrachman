@@ -1,0 +1,20 @@
+.ArticlesContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	gap: 1rem;
+}
+
+.ArticlesContent {
+	width: 32.4%;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	margin-top: 1rem;
+}
+
+.ArticlesContent img {
+	width: 100% !important;
+	border-radius: 14px;
+}
