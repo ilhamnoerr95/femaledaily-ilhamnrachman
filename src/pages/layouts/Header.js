@@ -8,8 +8,7 @@ import { faBars, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 // assets
 import {assets} from "/src/assets"
-// import logo from "/src/assets/FD-Logo.png"
-// import user from "/src/assets/user.png"
+
 
 
 const Header = ()=>{
@@ -50,8 +49,6 @@ const Header = ()=>{
                 <li>NAILS</li>
                 <li>TOOLS</li>
                 <li>BRANDS</li>
-
-
             </div>
         </nav>
     </Fragment>

@@ -5,11 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 // component
-import TopFrame from '/src/components/ads/TopFrame'
-import Billboard from '/src/components/ads/Billboard'
-
-
-const inter = Inter({ subsets: ['latin'] })
+import Ads from '/src/components/ads'
 
 export default function Home() {
   return (
@@ -22,12 +18,17 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         {/* adsense */}
-          <TopFrame/>
-          <Billboard/>
+          <Ads cssName="TopFrame">
+            Top Frame 970x50 
+          </Ads>
+          <Ads cssName="Billboard">
+            Billboard 970x250
+          </Ads>
         {/* --------------- */}
         {/* <FontAwesomeIcon icon={faCoffee}/> */}
-          <h1>HELLO WORLD</h1>
-          <p style={{backgroundColor:"red", width:"100%"}}>roboto</p>
+          {/* <p style={{backgroundColor:"red", width:"100%"}}>roboto</p> */}
+      
+
       </main>
     </>
   )

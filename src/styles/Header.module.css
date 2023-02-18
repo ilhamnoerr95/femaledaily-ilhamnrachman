@@ -19,12 +19,6 @@
 	align-items: center;
 }
 
-/* .NavOne {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-} */
-
 .NavAuth {
 	display: block;
 	background-color: #dc294f;

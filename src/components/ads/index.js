@@ -1,12 +1,10 @@
 import { Fragment } from "react"
 import style from "/src/styles/Ads.module.css"
 
-const billBoard = ()=>{
+const billBoard = ({children, cssName})=>{
     return <Fragment>
-        <section>
-        <div className={`${style.Box} ${style.Billboard}`}>
-                    Billboard 970x250
-            </div>
+        <section className={`${style.Box} ${style[cssName]}`}>
+                {children}
         </section>
 
     </Fragment>
