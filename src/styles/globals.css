@@ -52,3 +52,20 @@ p {
 .font-medium {
 	font-weight: var(--font-medium);
 }
+
+/* SUB HEADER CONTENT */
+.sub-head {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1rem;
+	font-weight: 400;
+}
+.sub-head span {
+	color: #5e5e62;
+}
+.see-more {
+	color: #eb2c85;
+	cursor: pointer;
+}

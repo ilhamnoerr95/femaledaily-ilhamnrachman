@@ -10,7 +10,6 @@ import { faBars, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import {assets} from "/src/assets"
 
 
-
 const Header = ()=>{
     return <Fragment>
         <nav className={style.MainNavContainer}>
@@ -28,8 +27,6 @@ const Header = ()=>{
                         <FontAwesomeIcon
                         className={`${style.Icon}`}
                         icon={faMagnifyingGlass} />
-
-                        {/* <i className="icon-input__icon material-icons">search</i> */}
                     </div>
                 </div>
                 <div className={style.NavAuth}>

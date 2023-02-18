@@ -26,9 +26,9 @@ const TopBrands = ()=>{
     return <Fragment>
         <section className={styles.BrandsContainer}>
             <h2>Top Brands</h2>
-            <div className={styles.SubHead}>
+            <div className="sub-head">
                 <span>We all know and love</span>
-                <div className={styles.SeeMore}>
+                <div className="see-more">
                     See more
                     <FontAwesomeIcon icon={faChevronRight} style={{marginLeft: "1rem"}} size="xs"/>
                 </div>

@@ -27,7 +27,7 @@ const footer = ()=>{
                 </div>
                 <div className={`${style.ChildFooterContainer}`}>
                     <ul>
-                        <li className={style.Downloads}>Download Out Mobile App</li>
+                        <li className={style.Downloads}>Download Our Mobile App</li>
                         <li className={style.Images}>
                             <Image src={assets.applestore} alt="applestore" width={120} height={40}/>
 

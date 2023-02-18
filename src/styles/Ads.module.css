@@ -1,11 +1,11 @@
 .Box {
 	border: 1px solid black;
-	width: 970px;
 	background-color: #d8d8d8;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 	font-size: 30px;
 	font-weight: 600;
 	color: #5e5e5e;
@@ -14,14 +14,18 @@
 
 .TopFrame {
 	height: 50px;
+	width: 970px;
 }
 
 .Billboard {
+	width: 970px;
+
 	height: 250px;
 	margin-top: 2rem;
 }
 
 .FooterAds {
+	width: 970px;
 	height: 50px;
 	margin-bottom: 1rem;
 }

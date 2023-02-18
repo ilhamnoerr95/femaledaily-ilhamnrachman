@@ -6,6 +6,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 // component
 import Ads from '/src/components/ads'
+import LatestVideo from 'components/home/latestVideo'
 import TopBrands from '/src/components/home/topbrands'
 
 export default function Home() {
@@ -25,7 +26,13 @@ export default function Home() {
           <Ads cssName="Billboard">
             Billboard 970x250
           </Ads>
+          {/* INTERNAL CAMPAIGN */}
+          <Ads cssName="Billboard">
+            Horizontal 970x250<br/>
+            (Internal campaign only)
+          </Ads>
         {/* --------------- */}
+        <LatestVideo/>
         <TopBrands/>
 
       </main>
