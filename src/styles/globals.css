@@ -29,14 +29,13 @@
 html,
 body {
 	width: 100%;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 	background-color: var(--bg-main);
 	color: black;
 	font-family: "Poppins", sans-serif;
 }
 
-p,
-span {
+p {
 	font-family: "Roboto";
 }
 

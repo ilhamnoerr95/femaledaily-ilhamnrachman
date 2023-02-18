@@ -9,7 +9,8 @@ import {assets} from "/src/assets"
 import Ads from '/src/components/ads'
 
 const footer = ()=>{
-    return <Fragment>
+    return <Fragment >
+        <div className={style.Pondation}>
             <footer className={style.FooterContainer}>
                 <div className={`${style.ChildFooterContainer}`}>
                     <ul>
@@ -55,6 +56,8 @@ const footer = ()=>{
                     Bottom Frame 970x250, 468x60, 320x50
                 </Ads>
             </div >
+
+        </div>
     </Fragment>
 }
 

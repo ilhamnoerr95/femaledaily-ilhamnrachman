@@ -1,11 +1,21 @@
-.FooterContainer {
+.Pondation {
 	border-top: 1px solid #e4e4e4;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.FooterContainer {
+	box-sizing: border-box;
+	margin-top: 2rem;
 	display: grid;
 	grid-template-columns: 70% 30%;
 	grid-template-rows: 1fr auto;
 	grid-gap: 10px 20px;
-	padding: 2rem 23rem;
+	/* padding: 2rem 23rem; */
+	width: 68.9vw;
 }
 
 .ChildFooterContainer ul {

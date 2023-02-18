@@ -6,6 +6,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 // component
 import Ads from '/src/components/ads'
+import TopBrands from '/src/components/home/topbrands'
 
 export default function Home() {
   return (
@@ -25,9 +26,7 @@ export default function Home() {
             Billboard 970x250
           </Ads>
         {/* --------------- */}
-        {/* <FontAwesomeIcon icon={faCoffee}/> */}
-          {/* <p style={{backgroundColor:"red", width:"100%"}}>roboto</p> */}
-      
+        <TopBrands/>
 
       </main>
     </>
