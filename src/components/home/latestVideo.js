@@ -6,7 +6,7 @@ import style from './style/LatestVideo.module.css'
 const LatestVideo = ()=>{
 return (
    <Fragment>
-        <section className={style.LatestVideoContainer}>
+        <section className="sub-header-container">
             <h2>Latest Video</h2>
             <div className="sub-head">
                 <span>Watch and learn, ladies</span>

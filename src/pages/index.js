@@ -8,6 +8,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import Ads from '/src/components/ads'
 import LatestVideo from 'components/home/latestVideo'
 import TopBrands from '/src/components/home/topbrands'
+import PopularGroup from 'components/home/popularGorups'
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
             (Internal campaign only)
           </Ads>
         {/* --------------- */}
+        <PopularGroup/>
         <LatestVideo/>
         <TopBrands/>
 

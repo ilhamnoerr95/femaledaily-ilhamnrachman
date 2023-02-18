@@ -1,0 +1,59 @@
+.BoxesContainer {
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	gap: 1rem;
+}
+
+.PopularBoxesContainer {
+	margin-top: 1rem;
+	width: 90%;
+	height: 40vh;
+	box-shadow: 0 0 7px -5px;
+	border-radius: 14px;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem 0;
+	align-items: center;
+	/* gap: 1rem; */
+}
+
+.ImagesPopular {
+	display: block;
+	width: 180px;
+	height: 180px;
+	overflow: hidden;
+	-webkit-border-radius: 180px;
+	-moz-border-radius: 180px;
+	-ms-border-radius: 180px;
+	-o-border-radius: 180px;
+	border-radius: 180px;
+	/* the rest */
+	position: relative; /* for the overlay later */
+	margin: 0px auto;
+	text-align: center;
+	margin-bottom: 10px;
+	border: 3px solid #fff;
+}
+.ImagesPopular img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	border: 0;
+	/* make resized images look good in IE */
+	-ms-interpolation-mode: bicubic;
+}
+
+.PopularChoice {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 0 3.5rem;
+	margin-bottom: 0.7rem;
+}
+
+.PopularBoxesContainer p {
+	text-align: center;
+	width: 70%;
+}

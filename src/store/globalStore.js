@@ -12,8 +12,13 @@ const initialState = {
       {id:4, img: assets.sk2, width:180, height: 120},
       {id:5, img: assets.maybelline, width:180, height: 120},
       {id:6, img: assets.innisfree, width:150, height: 120},
-
     ],
+    groupPopular: [
+      {id:1, img: assets.cat, },
+      {id:2, img: assets.cat, },
+      {id:3, img: assets.cat, },
+      {id:4, img: assets.cat},
+    ]
 };
 
 export const globalStore = createSlice({
@@ -24,6 +29,8 @@ export const globalStore = createSlice({
 });
 
 export const brandsImg = (state) => state.global.brandsImg;
+export const groupBoxes = (state) => state.global.groupPopular;
+
 
 
 export default globalStore.reducer;

@@ -54,12 +54,18 @@ p {
 }
 
 /* SUB HEADER CONTENT */
+.sub-header-container {
+	width: 68.9vw;
+	margin: 2rem 0;
+	display: flex;
+	flex-direction: column;
+}
 .sub-head {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 1rem;
+	margin-top: 0.7rem;
 	font-weight: 400;
 }
 .sub-head span {

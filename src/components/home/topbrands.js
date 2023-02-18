@@ -24,7 +24,7 @@ const BrandsLogo = ()=>{
 
 const TopBrands = ()=>{
     return <Fragment>
-        <section className={styles.BrandsContainer}>
+        <section className="sub-header-container">
             <h2>Top Brands</h2>
             <div className="sub-head">
                 <span>We all know and love</span>
