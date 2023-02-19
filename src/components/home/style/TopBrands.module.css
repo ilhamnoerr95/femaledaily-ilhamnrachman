@@ -5,6 +5,7 @@
 	margin: 1rem 0;
 	width: 100%;
 	gap: 5rem;
+	overflow: hidden;
 }
 
 .TopBrands div {

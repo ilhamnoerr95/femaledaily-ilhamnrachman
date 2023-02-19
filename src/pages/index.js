@@ -12,6 +12,7 @@ import LatestVideo from 'components/home/latestVideo'
 import TopBrands from '/src/components/home/topbrands'
 import PopularGroup from 'components/home/popularGorups'
 import LatestArticles from 'components/home/latestArticles';
+import Trending from 'components/home/trending'
 
 export default function Home() {
 
@@ -47,6 +48,7 @@ export default function Home() {
         <LatestArticles/>
         <PopularGroup/>
         <LatestVideo/>
+        <Trending/>
         <TopBrands/>
 
       </main>

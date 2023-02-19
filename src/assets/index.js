@@ -14,10 +14,13 @@ import maybelline from './brands/maybeline.png'
 import innisfree from './brands/innisfree.png'
 import groupImg from './groups/business_cover.jpeg'
 import cat from './groups/cat.jpeg'
+import bedak from './trending/bedak.jpg'
+import foundation from './trending/foundation.jpg'
+import lipstick from './trending/lipstick.png'
 
 export const assets = {
     logo, user, applestore, playstore,
     youtube, twitter, facebook, instagram,
     nivea, bodyshop, sk2, ordinary, maybelline, innisfree,
-    groupImg, cat
+    groupImg, cat, bedak, foundation, lipstick
 }

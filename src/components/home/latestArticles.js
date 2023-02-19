@@ -16,7 +16,7 @@ const ArticleSection = ()=>{
             return (<div className={styles.ArticlesContent} key={index}>
                 <Image src={data.image} alt="artile-img" width="500" height="200"/>
                 <div>
-                    <h3 style={{marginBottom: "1rem"}}>
+                    <h3 style={{margin: "1rem 0"}}>
                     {data.title}
                     </h3>
                     <span>{data.author}  <span style={{color: "gray"}}>|  {data.published_at}</span></span>

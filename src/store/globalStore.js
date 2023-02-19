@@ -8,11 +8,21 @@ const initialState = {
     activities: [],
     brandsImg: [
       {id:1, img: assets.nivea, width:80, height: 80},
-      {id:2, img: assets.ordinary, width:120, height: 120},
-      {id:3, img: assets.bodyshop, width:150, height: 80},
-      {id:4, img: assets.sk2, width:180, height: 120},
-      {id:5, img: assets.maybelline, width:180, height: 120},
+      {id:2, img: assets.ordinary, width:100, height: 80},
+      {id:3, img: assets.bodyshop, width:130, height: 70},
+      {id:4, img: assets.sk2, width:150, height: 100},
+      {id:5, img: assets.maybelline, width:150, height: 100},
       {id:6, img: assets.innisfree, width:150, height: 120},
+    ],
+    trendingProduct: [
+      {id:1,img:  assets.lipstick, rate: 4.9, title: "VAL BY VALERIE THOMAS", subtitle: "Pure Pressed Blush", type: "Neutral Rose"},
+      {id:2,img: assets.lipstick, rate: 4.9, title: "JUICE BEAUTY", subtitle: "Phyto Pigmens Flawless Mouth", type: "Rosy Beige"},
+      {id:3,img:  assets.lipstick, rate: 4.9, title: "SKINCEUTICALS", subtitle: "C E Ferulic", type: null},
+      {id:4,img:  assets.lipstick, rate: 4.9, title: "VAL BY VALERIE THOMAS", subtitle: "Pure Pressed Blush", type: "Neutral Rose"},
+      {id:5,img: assets.lipstick, rate: 4.9, title: "JUICE BEAUTY", subtitle: "Phyto Pigmens Flawless Mouth", type: "Rosy Beige"},
+      {id:6,img:  assets.lipstick, rate: 4.9, title: "SKINCEUTICALS", subtitle: "C E Ferulic", type: null},
+      {id:7,img:  assets.lipstick, rate: 4.9, title: "SKINCEUTICALS", subtitle: "C E Ferulic", type: null},
+
     ],
     groupPopular: [
       {id:1, img: assets.cat, },
@@ -60,7 +70,7 @@ export const globalStore = createSlice({
 
 export const brandsImg = (state) => state.global.brandsImg;
 export const groupBoxes = (state) => state.global.groupPopular;
-export const latestArticlesData = (state) => state.global.articles
-
+export const latestArticlesData = (state) => state.global.articles;
+export const trendsProduct = (state) => state.global.trendingProduct;
 
 export default globalStore.reducer;
