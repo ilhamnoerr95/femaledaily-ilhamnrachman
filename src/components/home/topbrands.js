@@ -24,7 +24,7 @@ const BrandsLogo = ()=>{
 
 const TopBrands = ()=>{
     return <Fragment>
-        <section className="sub-header-container">
+        <section className="sub-header-container" style={{marginBottom:"4rem"}}>
             <h2>Top Brands</h2>
             <div className="sub-head">
                 <span>We all know and love</span>
@@ -39,7 +39,6 @@ const TopBrands = ()=>{
                 <span>Product Reviews, Tips & Tricks, Expert and Consumer Opinions, Beauty Tutorials, Discussions, Beauty Workshops, anything! <br/>
                     We are here to be your friendly solution to all things beauty, inside and out!</span>
             </div>
-
         </section>
     </Fragment>
 }
