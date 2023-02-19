@@ -15,6 +15,9 @@ import LatestArticles from 'components/home/latestArticles';
 import Trending from 'components/home/trending'
 import EditorChoices from 'components/home/editorChoices';
 import LookProduct from 'components/home/lookProducts';
+import Reviews from 'components/home/reviews';
+
+
 export default function Home() {
 
   const dispatch = useDispatch()
@@ -54,6 +57,7 @@ export default function Home() {
         {/* --------------- */}
         <div className={styles.main}>
           <LatestArticles/>
+          <Reviews/>
           <PopularGroup/>
           <LatestVideo/>
           <Trending/>

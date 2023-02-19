@@ -5,13 +5,15 @@
 	width: 100%;
 	overflow: hidden;
 	margin: 1rem 0;
-	gap: 1rem;
+	gap: 1rem 2rem;
+	/* padding: 0 1rem; */
 }
 
 .ProductBox {
-	width: 800px !important;
-	height: 100%;
-	margin-right: 2rem;
+	width: 80%;
+	/* width: 800px !important; */
+	/* height: 100%; */
+	/* margin-right: 2rem; */
 }
 
 .ProductBox img {
@@ -36,5 +38,15 @@
 }
 
 .Slider {
-	margin: 0 auto;
+	margin: 1rem auto 0;
+}
+
+.Circle {
+	margin: 0 0.5rem 0 2rem;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: pink;
+	display: inline-block;
+	cursor: pointer;
 }

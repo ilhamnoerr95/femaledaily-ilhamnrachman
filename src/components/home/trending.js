@@ -2,8 +2,8 @@ import { Fragment, useMemo } from "react";
 import Image from "next/image";
 import style from './style/TrendingProducts.module.css'
 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 // redux
 import { trendsProduct } from "store/globalStore";
 import { useSelector } from "react-redux";
@@ -45,7 +45,14 @@ const Trending = ()=>{
                 </div>
                 <TrendingProduct/>
                 <div className={style.Slider}>
-                    slider
+                    <span>
+                        <FontAwesomeIcon icon={faChevronLeft} size="sm" color="pink"/>
+                        </span>
+                            <span className={style.Circle}></span>
+                            <span className={style.Circle}></span>
+                        <span style={{marginLeft: "1.5rem"}}>
+                            <FontAwesomeIcon icon={faChevronRight} size="sm" color="red"/>
+                    </span>
                 </div>
         </section>
         </Fragment>

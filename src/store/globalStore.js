@@ -79,6 +79,6 @@ export const latestArticlesData = (state) => state.global.articles;
 export const trendsProduct = (state) => state.global.trendingProduct;
 export const editorsData = (state) => state.global.editorChoices
 export const lookProducts = (state) => state.global.LookForProduct
-
+export const dataReviews = (state) => state.global.review
 
 export default globalStore.reducer;

@@ -12,16 +12,16 @@ const StartRating = ({value})=>{
         }
         // console.log(klass)
         stars.push(
-        <label
+        <span
             className={klass}>
             ★
-        </label>
+        </span>
         );
       }
     return (
-        <span className={style.StarRating}>
+        <label className={style.StarRating}>
             {stars}
-        </span>
+        </label>
     )
 }
 
