@@ -30,6 +30,11 @@ const initialState = {
       {id:3, img: assets.cat, },
       {id:4, img: assets.cat},
     ],
+    LookForProduct:[
+      {id:1,img:  assets.lipstick,match:"Match Skin Type", rate: 4.9, title: "VAL BY VALERIE THOMAS", subtitle: "Pure Pressed Blush", type: "Neutral Rose"},
+      {id:2,img: assets.lipstick,match:"Match Skin Type", rate: 4.9, title: "JUICE BEAUTY", subtitle: "Phyto Pigmens Flawless Mouth", type: "Rosy Beige"},
+      {id:3,img:  assets.lipstick,match:"Match Skin Type", rate: 4.9, title: "SKINCEUTICALS", subtitle: "C E Ferulic", type: null},
+    ],
     editorChoices: [],
     articles: [],
     review: [],
@@ -73,5 +78,7 @@ export const groupBoxes = (state) => state.global.groupPopular;
 export const latestArticlesData = (state) => state.global.articles;
 export const trendsProduct = (state) => state.global.trendingProduct;
 export const editorsData = (state) => state.global.editorChoices
+export const lookProducts = (state) => state.global.LookForProduct
+
 
 export default globalStore.reducer;

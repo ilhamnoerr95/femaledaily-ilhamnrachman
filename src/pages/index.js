@@ -14,7 +14,7 @@ import PopularGroup from 'components/home/popularGorups'
 import LatestArticles from 'components/home/latestArticles';
 import Trending from 'components/home/trending'
 import EditorChoices from 'components/home/editorChoices';
-
+import LookProduct from 'components/home/lookProducts';
 export default function Home() {
 
   const dispatch = useDispatch()
@@ -32,7 +32,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <main>
+      <div className={styles.main}>
         {/* adsense */}
           <Ads cssName="TopFrame">
             Top Frame 970x50 
@@ -41,17 +42,23 @@ export default function Home() {
             Billboard 970x250
           </Ads>
           <EditorChoices/>
+        </div>
+          <LookProduct/>
           {/* INTERNAL CAMPAIGN */}
+        <div className={styles.main}>
           <Ads cssName="Billboard">
             Horizontal 970x250<br/>
             (Internal campaign only)
           </Ads>
+        </div>
         {/* --------------- */}
-        <LatestArticles/>
-        <PopularGroup/>
-        <LatestVideo/>
-        <Trending/>
-        <TopBrands/>
+        <div className={styles.main}>
+          <LatestArticles/>
+          <PopularGroup/>
+          <LatestVideo/>
+          <Trending/>
+          <TopBrands/>
+        </div>
 
       </main>
     </>

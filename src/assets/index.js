@@ -17,10 +17,10 @@ import cat from './groups/cat.jpeg'
 import bedak from './trending/bedak.jpg'
 import foundation from './trending/foundation.jpg'
 import lipstick from './trending/lipstick.png'
-
+import skincare from "./skincare.png"
 export const assets = {
     logo, user, applestore, playstore,
     youtube, twitter, facebook, instagram,
     nivea, bodyshop, sk2, ordinary, maybelline, innisfree,
-    groupImg, cat, bedak, foundation, lipstick
+    groupImg, cat, bedak, foundation, lipstick, skincare,
 }
