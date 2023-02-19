@@ -2,34 +2,14 @@ import { Fragment, useMemo } from "react";
 import Image from "next/image";
 import style from './style/TrendingProducts.module.css'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+// redux
 import { trendsProduct } from "store/globalStore";
 import { useSelector } from "react-redux";
 
-const StartRating = (value)=>{
-    let stars = [];
-
-    for(var i = 0; i < 5; i++) {
-        let klass = style['star'];
-        
-        if (value >= i && value != null) {
-          klass += style['is-selected'];
-        }
-        console.log(klass)
-        stars.push(
-        <label
-            className={klass}>
-            ★
-        </label>
-        );
-      }
-    return (
-        <span className={style.StarRating}>
-            {stars}
-        </span>
-    )
-}
+// components
+import StartRating from "components/useable/ratingStar";
 
 
 const TrendingProduct = ()=>{
@@ -42,7 +22,7 @@ const TrendingProduct = ()=>{
                 <Image src={product.img} alt="trending image" width="144" height="144"/>
                 <div className={style.RateProduct}>
                     <span>{product.rate}</span>
-                    {StartRating(2)}
+                    <StartRating value={3}/>
                     <span>(8)</span>
                 </div>
                 <h4 style={{margin: "1rem 0"}}>{product.title}</h4>

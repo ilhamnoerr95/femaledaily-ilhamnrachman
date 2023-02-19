@@ -9,34 +9,22 @@
 }
 
 .ProductBox {
-	width: 300px;
+	width: 800px !important;
 	height: 100%;
-	/* display: column;
-	align-items: center; */
 	margin-right: 2rem;
+}
+
+.ProductBox img {
+	width: 100% !important;
+	object-fit: cover;
 }
 
 .RateProduct {
 	font-weight: bold;
 	margin-top: 1rem;
-}
-
-.StarRating {
-	margin: 0 0.5rem;
-}
-
-.star {
-	display: inline-block;
-	padding: 3px;
-	vertical-align: middle;
-	line-height: 1;
-	/* font-size: 1.5em; */
-	color: #ababab;
-	transition: color 0.2s ease-out;
-}
-
-.is-selected {
-	color: yellow !important;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 
 .Desc {

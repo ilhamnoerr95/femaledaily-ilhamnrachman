@@ -19,7 +19,9 @@ const ArticleSection = ()=>{
                     <h3 style={{margin: "1rem 0"}}>
                     {data.title}
                     </h3>
-                    <span>{data.author}  <span style={{color: "gray"}}>|  {data.published_at}</span></span>
+                    <span>{data.author}  
+                        <span style={{color: "gray"}}> |  {data.published_at}</span>
+                    </span>
                 </div>
             </div>)
         })}

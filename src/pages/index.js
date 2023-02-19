@@ -13,6 +13,7 @@ import TopBrands from '/src/components/home/topbrands'
 import PopularGroup from 'components/home/popularGorups'
 import LatestArticles from 'components/home/latestArticles';
 import Trending from 'components/home/trending'
+import EditorChoices from 'components/home/editorChoices';
 
 export default function Home() {
 
@@ -39,6 +40,7 @@ export default function Home() {
           <Ads cssName="Billboard">
             Billboard 970x250
           </Ads>
+          <EditorChoices/>
           {/* INTERNAL CAMPAIGN */}
           <Ads cssName="Billboard">
             Horizontal 970x250<br/>

@@ -72,5 +72,6 @@ export const brandsImg = (state) => state.global.brandsImg;
 export const groupBoxes = (state) => state.global.groupPopular;
 export const latestArticlesData = (state) => state.global.articles;
 export const trendsProduct = (state) => state.global.trendingProduct;
+export const editorsData = (state) => state.global.editorChoices
 
 export default globalStore.reducer;
